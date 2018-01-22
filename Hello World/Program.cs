@@ -136,15 +136,15 @@ namespace Hello_World
 
             //Section twelve conditionals
 
-             Console.WriteLine("What is your rank soldier?");
-             string rank = Console.ReadLine();
+            // Console.WriteLine("What is your rank soldier?");
+            //  string rank = Console.ReadLine();
             //// rank.ToLower();
 
-            Console.WriteLine("What is your age soldier?");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What is your age soldier?");
+            //int age = int.Parse(Console.ReadLine());
 
-             Console.WriteLine("What is your job soldier?");
-             string job = Console.ReadLine();
+            // Console.WriteLine("What is your job soldier?");
+            // string job = Console.ReadLine();
 
             // if ((rank == "officer") ||  (age <=26))
             // {
@@ -161,21 +161,60 @@ namespace Hello_World
             // }
 
 
-            //section thirteen switch case
-            switch(job)
-            {
-                case "infantry":
-                    Console.WriteLine("You will carry a sword");
-                    break;
+            ////section thirteen switch case
+            //switch(job)
+            //{
+            //    case "infantry":
+            //        Console.WriteLine("You will carry a sword");
+            //        break;
 
-                case "archers":
-                    Console.WriteLine("You will carry a bow and arrow");
-                    break;
+            //    case "archers":
+            //        Console.WriteLine("You will carry a bow and arrow");
+            //        break;
 
-                default:
-                    Console.WriteLine("You will operate the catapault");
-                    break;
-            }
+            //    default:
+            //        Console.WriteLine("You will operate the catapault");
+            //        break;
+            //}
+
+
+            //section fourteen array examples
+            string[] foodList = new string[5];
+            foodList[0] = "Milk";
+            foodList[1] = "Fruit";
+            foodList[2] = "Meat";
+            foodList[3] = "Wine";
+            foodList[4] = "Bread";
+
+            //Console.WriteLine(foodList[0]);
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            int[] quantityFood = new int[5];
+            quantityFood[0] = 1000;
+            quantityFood[1] = 100;
+            quantityFood[2] = 2000;
+            quantityFood[3] = 10000;
+            quantityFood[4] = 1500;
+            Console.WriteLine("{0},{1}, {2}, {3}, {4}", quantityFood[0], quantityFood[1], quantityFood[2], quantityFood[3], quantityFood[4]);
+            Console.WriteLine(foodList[0] + ": " + quantityFood[0] + ": " + foodList[1] + ": " + quantityFood[1]);
+           Console.WriteLine("{0} {1} {2} {3}", foodList[0], quantityFood[0],foodList[1], quantityFood[1]);
+            Console.WriteLine(foodList.Length);
+
+            string[] elements = messageTwo.Split(' '); //looks for space ' ' and splits it and puts in next available index
+            Console.WriteLine(elements[0]); //prints "I"
+            Console.WriteLine(elements[1]); //prints "am"
+            Console.WriteLine(elements[2]); //prints "Spartacus"
+
+            string myName = "Sue";
+            char[] letters = myName.ToCharArray();
+            Console.Write(myName[0]);// displays w/o a line between
+            Console.Write(myName[1]);
+            Console.Write(myName[2]);
+            Console.WriteLine();
+
+
+          //  Console.WriteLine("fee, fie, foe, fum".IndexOf("foe"));// prints 10
+
 
         }
 
