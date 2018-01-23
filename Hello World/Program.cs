@@ -195,6 +195,7 @@ namespace Hello_World
             quantityFood[2] = 2000;
             quantityFood[3] = 10000;
             quantityFood[4] = 1500;
+            //int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };this is an easier way to write the same thing.
             Console.WriteLine("{0},{1}, {2}, {3}, {4}", quantityFood[0], quantityFood[1], quantityFood[2], quantityFood[3], quantityFood[4]);
             Console.WriteLine(foodList[0] + ": " + quantityFood[0] + ": " + foodList[1] + ": " + quantityFood[1]);
            Console.WriteLine("{0} {1} {2} {3}", foodList[0], quantityFood[0],foodList[1], quantityFood[1]);
