@@ -179,43 +179,101 @@ namespace Hello_World
 
 
             //section fourteen array examples
-            string[] foodList = new string[5];
-            foodList[0] = "Milk";
-            foodList[1] = "Fruit";
-            foodList[2] = "Meat";
-            foodList[3] = "Wine";
-            foodList[4] = "Bread";
+            //  string[] foodList = new string[5];
+            //  foodList[0] = "Milk";
+            //  foodList[1] = "Fruit";
+            //  foodList[2] = "Meat";
+            //  foodList[3] = "Wine";
+            //  foodList[4] = "Bread";
 
-            //Console.WriteLine(foodList[0]);
-            Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+            //  //Console.WriteLine(foodList[0]);
+            //  Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
 
-            int[] quantityFood = new int[5];
-            quantityFood[0] = 1000;
-            quantityFood[1] = 100;
-            quantityFood[2] = 2000;
-            quantityFood[3] = 10000;
-            quantityFood[4] = 1500;
-            //int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };this is an easier way to write the same thing.
-            Console.WriteLine("{0},{1}, {2}, {3}, {4}", quantityFood[0], quantityFood[1], quantityFood[2], quantityFood[3], quantityFood[4]);
-            Console.WriteLine(foodList[0] + ": " + quantityFood[0] + ": " + foodList[1] + ": " + quantityFood[1]);
-           Console.WriteLine("{0} {1} {2} {3}", foodList[0], quantityFood[0],foodList[1], quantityFood[1]);
-            Console.WriteLine(foodList.Length);
+            //  int[] quantityFood = new int[5];
+            //  quantityFood[0] = 1000;
+            //  quantityFood[1] = 100;
+            //  quantityFood[2] = 2000;
+            //  quantityFood[3] = 10000;
+            //  quantityFood[4] = 1500;
+            //  //int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 1500 };this is an easier way to write the same thing.
+            //  Console.WriteLine("{0},{1}, {2}, {3}, {4}", quantityFood[0], quantityFood[1], quantityFood[2], quantityFood[3], quantityFood[4]);
+            //  Console.WriteLine(foodList[0] + ": " + quantityFood[0] + ": " + foodList[1] + ": " + quantityFood[1]);
+            // Console.WriteLine("{0} {1} {2} {3}", foodList[0], quantityFood[0],foodList[1], quantityFood[1]);
+            //  Console.WriteLine(foodList.Length);
 
-            string[] elements = messageTwo.Split(' '); //looks for space ' ' and splits it and puts in next available index
-            Console.WriteLine(elements[0]); //prints "I"
-            Console.WriteLine(elements[1]); //prints "am"
-            Console.WriteLine(elements[2]); //prints "Spartacus"
+            //  string[] elements = messageTwo.Split(' '); //looks for space ' ' and splits it and puts in next available index
+            //  Console.WriteLine(elements[0]); //prints "I"
+            //  Console.WriteLine(elements[1]); //prints "am"
+            //  Console.WriteLine(elements[2]); //prints "Spartacus"
 
-            string myName = "Sue";
-            char[] letters = myName.ToCharArray();
-            Console.Write(myName[0]);// displays w/o a line between
-            Console.Write(myName[1]);
-            Console.Write(myName[2]);
-            Console.WriteLine();
+            //  string myName = "Sue";
+            //  char[] letters = myName.ToCharArray();
+            //  Console.Write(myName[0]);// displays w/o a line between
+            //  Console.Write(myName[1]);
+            //  Console.Write(myName[2]);
+            //  Console.WriteLine();
 
 
-          //  Console.WriteLine("fee, fie, foe, fum".IndexOf("foe"));// prints 10
+            ////  Console.WriteLine("fee, fie, foe, fum".IndexOf("foe"));// prints 10
 
+            // Part fifteen while loop example
+            // while loop example
+
+            //string action = " ";
+            //while (action != "exit")
+            //{
+            //    Console.WriteLine("What is your rank soldier?");
+            //    string rank = Console.ReadLine();
+
+            //    Console.WriteLine("What is your age soldier?");
+            //    int age = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("What is your job soldier?");
+            //    string job = Console.ReadLine();
+
+            //    if ((rank == "officer") || (age <= 26))
+            //    {
+            //        Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+            //    }
+            //    else if ((job == "cook") || (age >= 26))
+            //    {
+            //        Console.WriteLine("My army has to eat. Pack your pots and pans");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sorry you are staying home.");
+            //    }
+            //    Console.WriteLine("Add another? Type exit to quit");
+            //    action = Console.ReadLine();
+            //}
+
+            // do while loop example (snooze button on alarm clock is a good real world example, it would go off at once before you could hit the snooze)
+
+            string action = " ";
+            do
+            {
+                Console.WriteLine("What is your rank soldier?");
+                string rank = Console.ReadLine();
+
+                Console.WriteLine("What is your age soldier?");
+                int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("What is your job soldier?");
+                string job = Console.ReadLine();
+
+                if ((rank == "officer") || (age <= 26))
+                {
+                    Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+                }
+                else if ((job == "cook") || (age >= 26))
+                {
+                    Console.WriteLine("My army has to eat. Pack your pots and pans");
+                }
+                else
+                {
+                    Console.WriteLine("Sorry you are staying home.");
+                }
+                Console.WriteLine("Add another? Type exit to quit");
+                action = Console.ReadLine();
+            } while (action != "exit");
 
         }
 
