@@ -282,12 +282,19 @@ namespace Hello_World
             //    Console.WriteLine(i);
             //}
 
-            
-            for (int i = 0; i < quantityFood.Length; i++)
-            {
-                Console.WriteLine("Enter a value for " + foodList[i]);
-                quantityFood[i] = int.Parse(Console.ReadLine());
-            }
+
+            //for (int i = 0; i < quantityFood.Length; i++)
+            //{
+            //    Console.WriteLine("Enter a value for " + foodList[i]);
+            //    quantityFood[i] = int.Parse(Console.ReadLine());
+            //}
+
+
+            //part seventeen - create 3 example methods, bool, string, int[]
+
+
+
+
         }
 
 
